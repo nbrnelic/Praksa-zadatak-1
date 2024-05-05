@@ -4,6 +4,7 @@
 }
 body {
   overflow-x: hidden;
+  margin: 0;
 }
 
 .container-top {
@@ -24,7 +25,7 @@ body {
   align-items: center;
 }
 
-.logo {
+.header .logo {
   width: 160px;
   height: 41px;
   display: flex;
@@ -32,7 +33,7 @@ body {
   align-items: center;
 }
 
-.logo .circle {
+.header .logo .circle {
   background-color: #458FF6;
   width: 41px;
   height: 41px;
@@ -42,14 +43,14 @@ body {
   align-items: center;
 }
 
-.T {
+.header .T {
   color: #FFFFFF;
   font-family: Mulish;
   font-weight: 700;
   font-size: 26px;
 }
 
-.Trafalgar {
+.header .Trafalgar {
   font-family: Mulish;
   font-weight: 700;
   font-size: 24px;
@@ -609,5 +610,81 @@ body {
 .footer .rectangle {
   width: 100%;
   height: 432px;
+  margin-left: 0;
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-trafalgar {
+  width: 391px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info h1 {
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-info a {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 38px;
+  text-align: left;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-trafalgar .logo {
+  width: 160px;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-trafalgar .logo .circle {
+  background-color: #FFFFFF;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-trafalgar .T {
+  color: #5B9BF3;
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.footer-trafalgar .Trafalgar {
+  color: #FFFFFF;
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer-trafalgar p {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
