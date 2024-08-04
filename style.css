@@ -117,15 +117,15 @@ body {
   margin-right: 90px;
 }
 
+/*
 .main .element {
-  position: relative;
-  width: 131.58px;
-  height: 115px;
-  margin-top: 50px;
-  margin-left: -50px;
-  z-index: -1;
-}
-
+    position: relative;
+    width: 131.58px;
+    height: 115px;
+    margin-top: 50px;
+    margin-left: -50px;
+    z-index: -1;
+}*/
 .our-services {
   margin-top: 200px;
   display: flex;
@@ -320,16 +320,16 @@ body {
   line-height: 60px;
 }
 
-/*
 .healthcare-apps .element {
-    position: absolute;
-    overflow: hidden;
-    width: 131.58px;
-    height: 115px;
-    top: 2800px;
-    left: 1815px;
-    z-index: -1;
-} */
+  position: absolute;
+  overflow: hidden;
+  width: 131.58px;
+  height: 115px;
+  top: 2800px;
+  left: 1815px;
+  z-index: -1;
+}
+
 .testimonials {
   display: flex;
   flex-direction: column;
