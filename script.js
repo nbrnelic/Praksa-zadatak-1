@@ -1,5 +1,3 @@
-document.body.innerHTML += "<p>TEST TEST!</p>";
-
 const images = [
     { src: "images/customer1.png", label: "Edward Newgate" },
     { src: "images/customer2.jpg", label: "Jane Doe" },
@@ -15,8 +13,8 @@ const dots = document.querySelectorAll(".arrow-nav .dot");
 
 function updateCustomer() {
     if (customerImage && customerLabel) {
-        customerImage.src = images[currentIndex].src; // Update image source
-        customerLabel.textContent = images[currentIndex].label; // Update label
+        customerImage.src = images[currentIndex].src;
+        customerLabel.textContent = images[currentIndex].label;
 
         // Update dot visibility
         dots.forEach((dot, index) => {
@@ -32,16 +30,15 @@ function updateCustomer() {
 }
 
 if (prevImageButton && nextImageButton && customerImage && customerLabel) {
-    // Initialize the display
     updateCustomer();
 
     nextImageButton.onclick = () => {
-        currentIndex = (currentIndex + 1) % images.length; // Increment index and wrap around
+        currentIndex = (currentIndex + 1) % images.length;
         updateCustomer();
     };
 
     prevImageButton.onclick = () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length; // Decrement index and wrap around
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateCustomer();
     };
 }
